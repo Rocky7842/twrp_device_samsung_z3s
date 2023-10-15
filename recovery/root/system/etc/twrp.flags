@@ -20,6 +20,8 @@
 /sec_efs            ext4    /dev/block/bootdevice/by-name/sec_efs        flags=backup=1;display="Sec EFS"
 /modem              emmc    /dev/block/bootdevice/by-name/radio          flags=backup=1;display="Baseband"
 /cache              ext4    /dev/block/bootdevice/by-name/cache          flags=display="Cache"
+/metadata           ext4    /dev/block/bootdevice/by-name/metadata       flags=backup=0;wipeingui;display="Metadata"
+/metadata_image     emmc    /dev/block/bootdevice/by-name/metadata       flags=backup=1;flashimg;display="Metadata Image"
 
 # Removable partitions
 /external_sd        vfat    /dev/block/mmcblk0p1 /dev/block/mmcblk0      flags=display="Micro SDcard";storage;wipeingui;removable
